@@ -32,5 +32,10 @@ def voucher(request):
 def vouchpage(request):
     return render(request, 'vouchpage.html')
 
+def stockcategory(request):
+    return render(request,'stockcategory.html')
+
+def createstockcategory(request):
+    return render(request,'createstockcategory.html')
 
 

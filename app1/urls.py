@@ -14,7 +14,8 @@ urlpatterns = [
     path('costcentr',views.costcentr,name='costcentr'),
     path('voucher',views.voucher,name='voucher'),
     path('vouchpage',views.vouchpage,name='vouchpage'),
-
+    path('stockcategory',views.stockcategory,name='stockcategory'),
+    path('createstockcategory',views.createstockcategory,name='createstockcategory'),
 
 
 

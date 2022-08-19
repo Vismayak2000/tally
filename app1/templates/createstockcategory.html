@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+    {% block body %}
+        {% load static %}
+        <style>
+            .container{
+                display: flex;
+                height:40vh;
+                align-items: center;
+                justify-content: center;
+            }
+        .form1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            
+        }
+        form{
+            padding:30px;
+        }
+        .close {
+            position: absolute;
+            top: 3px;
+            right: 8px;
+            font-size: 25px;
+            color: rgb(255, 255, 255);
+            transform: rotate(45deg);
+            cursor: pointer;
+            text-decoration: none;
+            
+        }
+        button{
+            background-color:rgb(103, 175, 220) ;
+            color:white;
+            padding:5px 10px;
+            float:right;
+        }
+    </style>
+    <div class="container">
+        <div class="form1"style=" background-color:rgba(0,0,0,0.3);">
+            <a href="stockcategory" class="close">+</a>
+            <h5 style="background-color:rgb(103, 175, 220) ; color:white; text-align: center; padding: 5px 0; width:100%;">Stock Category Creation(Secondary)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h5>
+            <form action="" method="post">           
+            <div><p>Name</p></div>
+            <input type="text"><br><br>
+            <div><p>(Alias)</p></div>
+            <input type="text"><br><br>
+            <div><p>Under</p></div>
+            <select name="primary" id="primary">
+                <option value="primary">Primary</option>
+            </select>
+            <br><br>
+            <button><h5>Accept</h5></button>
+        </form>
+    </div>
+</div>
+{% endblock %}
